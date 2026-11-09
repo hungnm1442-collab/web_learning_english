@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-08T23:37:00+07:00",
+  "title": "Design System: LingoLy",
+  "extensions": {
+    "colorMeta": {
+      "wine-primary": {
+        "role": "primary",
+        "displayName": "Vintage Wine",
+        "canonical": "#8d1e32",
+        "tonalRamp": ["#2c070f", "#470d1a", "#681426", "#8d1e32", "#b22a42", "#d46a7e", "#eeb8c3", "#f9e6ec"]
+      },
+      "wine-deep": {
+        "role": "primary",
+        "displayName": "Deep Burgundy",
+        "canonical": "#681426",
+        "tonalRamp": ["#22050b", "#380a14", "#50101e", "#681426", "#8d1e32", "#b84c60", "#e29aa8", "#f7dfe4"]
+      },
+      "wine-bright": {
+        "role": "primary",
+        "displayName": "Luminous Crimson",
+        "canonical": "#b22a42",
+        "tonalRamp": ["#330811", "#54101e", "#7a182c", "#962036", "#b22a42", "#d15c71", "#eaa3b0", "#fcebef"]
+      },
+      "quiet-blue": {
+        "role": "secondary",
+        "displayName": "Quiet Slate Blue",
+        "canonical": "#46658b",
+        "tonalRamp": ["#162230", "#24364c", "#354d6b", "#46658b", "#6484ab", "#8ca7c7", "#bdd0e4", "#e3edf6"]
+      },
+      "blue-mist": {
+        "role": "secondary",
+        "displayName": "Powder Blue Mist",
+        "canonical": "#9db8d3",
+        "tonalRamp": ["#1d2c3b", "#2f465e", "#46658b", "#6c8db0", "#9db8d3", "#bfd2e5", "#dce7f2", "#f0f5fa"]
+      },
+      "blue-soft": {
+        "role": "secondary",
+        "displayName": "Ice Blue Pill",
+        "canonical": "#e3edf6",
+        "tonalRamp": ["#1f3042", "#354f6b", "#46658b", "#7392b7", "#a3bdd9", "#c7d9ec", "#e3edf6", "#f4f8fc"]
+      },
+      "blush-accent": {
+        "role": "tertiary",
+        "displayName": "Rose Blush",
+        "canonical": "#e8a9b9",
+        "tonalRamp": ["#3b121d", "#612031", "#8d1e32", "#b85d72", "#d48497", "#e8a9b9", "#f3cdd7", "#f9e6ec"]
+      },
+      "blush-soft": {
+        "role": "tertiary",
+        "displayName": "Soft Petal Blush",
+        "canonical": "#f9e6ec",
+        "tonalRamp": ["#421521", "#6e2438", "#9c3b54", "#c46c82", "#e099ab", "#efc2ce", "#f9e6ec", "#fff7f9"]
+      },
+      "cream-paper": {
+        "role": "neutral",
+        "displayName": "Warm Cream Paper",
+        "canonical": "#fffaf7",
+        "tonalRamp": ["#2c1017", "#4f3238", "#75585e", "#9e8287", "#c4aeb2", "#e2d3d5", "#f5ece8", "#fffaf7"]
+      },
+      "beige-canvas": {
+        "role": "neutral",
+        "displayName": "Champagne Beige Canvas",
+        "canonical": "#ede0d7",
+        "tonalRamp": ["#2b1a16", "#4a332d", "#6e524a", "#94776e", "#baa097", "#d8c5bc", "#ede0d7", "#faf4f0"]
+      },
+      "ink-primary": {
+        "role": "neutral",
+        "displayName": "Espresso Wine Ink",
+        "canonical": "#2c1017",
+        "tonalRamp": ["#17070b", "#2c1017", "#47232c", "#664049", "#8a646d", "#b3929a", "#dbc5ca", "#f5ebed"]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Warm Taupe Muted",
+        "canonical": "#6f5a60",
+        "tonalRamp": ["#24181b", "#3b292e", "#543f45", "#6f5a60", "#8f7980", "#b3a0a6", "#d6c9cd", "#f2ecee"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headlines on the Landing Page." },
+      "headline": { "displayName": "Headline", "purpose": "Workspace greeting, Bento Hero Card statement, and modal titles." },
+      "title": { "displayName": "Title", "purpose": "Subpage panel headers and section titles." },
+      "body": { "displayName": "Body", "purpose": "Lesson descriptions, schedule subtitles, and flashcard example sentences." },
+      "label": { "displayName": "Label", "purpose": "Sidebar navigation group headers and pill badges." }
+    },
+    "shadows": [
+      { "name": "shadow-ambient", "value": "0 18px 42px rgba(58, 14, 24, 0.12)", "purpose": "Anchors the floating sidebar and main glass board against the ambient background." },
+      { "name": "shadow-card", "value": "0 10px 26px rgba(72, 18, 30, 0.08)", "purpose": "Soft burgundy-tinted offset shadow under frosted glass Bento cards." },
+      { "name": "shadow-hero-wine", "value": "0 18px 38px rgba(104, 20, 38, 0.24)", "purpose": "Deep warm elevation beneath saturated Wine-Red gradient cards." }
+    ],
+    "motion": [
+      { "name": "ease-out-expo", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Smooth exponential deceleration for card hover lifts, modal entrances, and gauge fills." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "760px" },
+      { "name": "md", "value": "1050px" },
+      { "name": "lg", "value": "1180px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Wine Pill Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action trigger across modals and lessons with Quiet Blue hover transition.",
+      "html": "<button class=\"ds-btn-primary\"><span>Học bài tiếp theo</span><svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7M9 7h8v8\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border: 0; border-radius: 999px; background: #8d1e32; color: #fffaf7; font: 700 13px/1 'Manrope', sans-serif; box-shadow: 0 8px 20px rgba(141, 30, 50, 0.24); cursor: pointer; transition: background 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-primary:hover { background: #46658b; transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #46658b; outline-offset: 2px; }"
+    },
+    {
+      "name": "White Hero Pill Button",
+      "kind": "button",
+      "refersTo": "button-white-pill",
+      "description": "High-contrast pill CTA used on the Wine-Red Bento Hero Card.",
+      "html": "<button class=\"ds-btn-white\"><span>Học tiếp bài này</span><svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7M9 7h8v8\"/></svg></button>",
+      "css": ".ds-btn-white { display: inline-flex; align-items: center; gap: 7px; padding: 11px 18px; border: 0; border-radius: 999px; background: #fffaf7; color: #681426; font: 700 12px/1 'Manrope', sans-serif; box-shadow: 0 8px 20px rgba(48, 8, 18, 0.18); cursor: pointer; transition: background 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-white:hover { background: #ffffff; transform: translateY(-1px); } .ds-btn-white:focus-visible { outline: 2px solid #fffaf7; outline-offset: 2px; }"
+    },
+    {
+      "name": "Frosted Bento KPI Card",
+      "kind": "card",
+      "refersTo": "card-glass",
+      "description": "Translucent champagne-beige glass card displaying a learner metric, trend badge, and SVG sparkline.",
+      "html": "<div class=\"ds-card-kpi\"><div class=\"ds-kpi-top\"><span class=\"ds-kpi-icon\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\"><path d=\"M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z\"/></svg></span><span class=\"ds-kpi-trend\">+12 từ</span></div><div class=\"ds-kpi-val\">86</div><div class=\"ds-kpi-sub\"><strong>Từ vựng tích lũy</strong><span>12 từ đến hạn ôn hôm nay</span></div></div>",
+      "css": ".ds-card-kpi { display: flex; flex-direction: column; justify-content: space-between; width: 220px; padding: 20px; border-radius: 16px; background: rgba(255, 251, 248, 0.78); color: #2c1017; box-shadow: 0 10px 26px rgba(72, 18, 30, 0.08); font-family: 'Manrope', sans-serif; transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1); } .ds-card-kpi:hover { transform: translateY(-3px); background: rgba(255, 252, 250, 0.94); } .ds-kpi-top { display: flex; justify-content: space-between; align-items: center; } .ds-kpi-icon { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 50%; background: #fffaf7; color: #681426; } .ds-kpi-trend { padding: 4px 9px; border-radius: 999px; background: #e3edf6; color: #46658b; font-size: 10px; font-weight: 700; } .ds-kpi-val { margin-top: 16px; font-size: 30px; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; } .ds-kpi-sub { margin-top: 12px; } .ds-kpi-sub strong { display: block; font-size: 12px; color: #3b141e; } .ds-kpi-sub span { display: block; margin-top: 3px; font-size: 10px; color: #7c6369; }"
+    },
+    {
+      "name": "Sidebar Navigation Pill",
+      "kind": "nav",
+      "refersTo": "button-white-pill",
+      "description": "Floating smoked-wine glass sidebar navigation item with crisp cream active state.",
+      "html": "<div class=\"ds-nav-rail\"><button class=\"ds-nav-item is-active\"><span>Lộ trình học</span></button><button class=\"ds-nav-item\"><span>Flashcard</span><b class=\"ds-badge\">12</b></button></div>",
+      "css": ".ds-nav-rail { display: flex; flex-direction: column; gap: 4px; width: 220px; padding: 12px; border-radius: 16px; background: linear-gradient(180deg, rgba(112, 28, 44, 0.82), rgba(58, 15, 25, 0.92)); font-family: 'Manrope', sans-serif; } .ds-nav-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border: 0; border-radius: 11px; background: transparent; color: rgba(255, 244, 246, 0.78); font-size: 13px; font-weight: 500; cursor: pointer; transition: background 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-nav-item:hover { background: rgba(255, 250, 247, 0.12); color: #ffffff; } .ds-nav-item.is-active { background: #fffaf7; color: #681426; font-weight: 700; box-shadow: 0 6px 18px rgba(40, 8, 16, 0.18); } .ds-badge { padding: 2px 8px; border-radius: 999px; background: #b22a42; color: #fffaf7; font-size: 10px; font-weight: 700; }"
+    },
+    {
+      "name": "Quick Search Ask Pill",
+      "kind": "input",
+      "refersTo": "button-dark-pill",
+      "description": "Translucent search trigger pill with keyboard shortcut badge inside the glass sidebar.",
+      "html": "<button class=\"ds-ask-pill\"><span>Tìm bài học, từ vựng...</span><kbd>⌘K</kbd></button>",
+      "css": ".ds-ask-pill { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 220px; padding: 10px 12px; border: 0; border-radius: 999px; background: rgba(44, 10, 18, 0.55); color: rgba(255, 246, 242, 0.9); font: 500 12px 'Manrope', sans-serif; cursor: pointer; transition: background 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-ask-pill:hover { background: rgba(141, 30, 50, 0.75); color: #ffffff; } .ds-ask-pill kbd { padding: 2px 6px; border-radius: 999px; background: rgba(255, 250, 247, 0.18); color: #fffaf7; font: 600 10px 'Manrope', sans-serif; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Warm Glass Study Studio",
+    "overview": "LingoLy pairs an editorial warm-cream landing experience with a tactile Glassy Dashboard V24 learning workspace. Instead of clinical white cards or cold dark-mode fintech panels, the learning workspace suspends translucent champagne-beige glass boards (rgba(252, 246, 241, 0.88)) and a smoked-wine glass sidebar over an ambient wine-to-sand canvas. Every study session feels like stepping into a sunlit personal studio where daily momentum, vocabulary retention, and lesson schedules are organized into a scannable Bento grid.\n\nColor is purposeful and emotionally grounded in LingoLy's triadic identity: Wine Red (#8d1e32) drives primary actions, hero momentum cards, and streak highlights; Quiet Blue (#46658b) anchors secondary data series, phonetic cues, and positive trend badges; and Warm Beige & Cream (#fffaf7 / #ede0d7) form the frosted glass surfaces that keep reading effortless for Vietnamese learners.",
+    "keyCharacteristics": [
+      "Floating frosted-glass architecture (backdrop-filter: blur(20px–28px)) over a warm multi-stop wine, blush, and sand ambient backdrop.",
+      "Bento grid workspace combining a saturated Wine-Red momentum hero card (with a 68% segmented circular gauge and orbiting skill badges), an interactive 7-day calendar & lesson schedule card, and 4 KPI cards with smooth SVG sparklines.",
+      "Vietnamese-safe display and editorial typography pairing geometric Manrope with italic Noto Serif accents that keep Vietnamese diacritics crisp at all sizes.",
+      "Zero-clutter hierarchy: headings speak directly without eyebrows or kickers above them, and all icons are rendered with consistent 1.85px stroke SVGs."
+    ],
+    "rules": [
+      {
+        "name": "The One Highlighted Bento Rule",
+        "body": "In any multi-card KPI row, exactly one card (such as the 7-day Streak card) may wear the full Wine-Red gradient (#b32a42 to #681426); its sibling cards remain translucent champagne-beige glass (rgba(255, 251, 248, 0.72)) so the focal metric commands immediate attention.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tinted Neutral Rule",
+        "body": "Never use pure achromatic gray (#808080 or #f5f5f5) inside the learning workspace; every surface, muted label, and divider is tinted from the Wine-Beige warm axis (#6f5a60, rgba(141, 30, 50, 0.12)).",
+        "section": "colors"
+      },
+      {
+        "name": "The Serif Inflection Rule",
+        "body": "Inside the Bento Hero Card and Landing headlines, highlight the single most emotional phrase using italic Noto Serif (<em>rất đều</em>) with a soft blush underline (text-underline-offset: 5px), never gradient text.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Metric Rule",
+        "body": "Every progress percentage (68%), calendar date (08), duration (09:30), and KPI counter (86, 94.8%) enforces font-variant-numeric: tabular-nums so numbers align cleanly across rows and state updates.",
+        "section": "typography"
+      },
+      {
+        "name": "The Single-Elevation Declaration Rule",
+        "body": "Cards declare their depth through translucent fill plus a soft offset shadow (--shadow-card), never combining a 1px structural border with a wide drop shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the triadic Wine Red (#8d1e32) + Quiet Blue (#46658b) + Warm Beige (#ede0d7 / #fffaf7) palette across both the Landing Page and the Glassy Dashboard V24 workspace.",
+      "Do use Noto Serif for italic display emphasis and Manrope with tabular-nums for all metrics, percentages, dates, and timers.",
+      "Do keep card border radii at 16px (12px–14px for inner rows) and use 999px pills for buttons, day capsules, and status badges.",
+      "Do use consistent 1.85px–2px stroke inline SVGs for all icons and sparklines."
+    ],
+    "donts": [
+      "Don't place uppercase kickers or eyebrows above headings (<h1>, <h2>, <h3>); let the heading carry its own hierarchy or use an interactive live-status pill where appropriate.",
+      "Don't use raw Unicode glyphs or emojis (✦, →, •••) as UI icons inside the learning workspace.",
+      "Don't tighten letter-spacing past -0.04em on any heading or display text.",
+      "Don't use bounce or elastic easing (cubic-bezier(.2, 1.4, ...)): always decelerate smoothly with cubic-bezier(0.22, 1, 0.36, 1)."
+    ]
+  }
+}

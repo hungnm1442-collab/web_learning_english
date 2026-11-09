@@ -1,0 +1,43 @@
+:root {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #681426;
+  color: #2c1017;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #46658b;
+  outline-offset: 2px;
+}
+
+::selection {
+  color: #fffaf7;
+  background: #8d1e32;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ede0d7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e8a9b9;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8d1e32;
+}
